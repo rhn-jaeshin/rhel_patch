@@ -1,0 +1,114 @@
+## Red Hat Enterprise Linux 9 ##
+
+## 9.3.z ##
+
+* Thu Nov 02 2023 Jan Stancek <jstancek@redhat.com> [5.14.0-362.10.1.el9_3]
+- keys: Fix linking a duplicate key to a keyring's assoc_array (Jay Shin) [RHEL-14058 RHEL-9908]
+
+* Thu Oct 26 2023 Jan Stancek <jstancek@redhat.com> [5.14.0-362.9.1.el9_3]
+- cgroup: always put cset in cgroup_css_set_put_fork (Jay Shin) [RHEL-14053]
+- cgroup: bpf: use cgroup_lock()/cgroup_unlock() wrappers (Jay Shin) [RHEL-14053]
+
+## 9.2.z ##
+
+* Wed Nov 01 2023 Herton R. Krzesinski <herton@redhat.com> [5.14.0-284.40.1.el9_2]
+- keys: Fix linking a duplicate key to a keyring's assoc_array (Jay Shin) [RHEL-14057 RHEL-9908]
+
+* Thu Oct 26 2023 Herton R. Krzesinski <herton@redhat.com> [5.14.0-284.39.1.el9_2]
+- cgroup: always put cset in cgroup_css_set_put_fork (Jay Shin) [RHEL-14055 RHEL-3218]
+- cgroup: bpf: use cgroup_lock()/cgroup_unlock() wrappers (Jay Shin) [RHEL-14055 2221599]
+- cgroup: Export cgroup_mutex (Jay Shin) [RHEL-14055 2182238]
+
+## 9.y ##
+
+* Tue Oct 17 2023 Scott Weaver <scweaver@redhat.com> [5.14.0-377.el9]
+- cgroup: always put cset in cgroup_css_set_put_fork (Jay Shin) [RHEL-3218]
+- keys: Fix linking a duplicate key to a keyring's assoc_array (Jay Shin) [RHEL-9908]
+
+
+## Red Hat Enterprise Linux 8 ##
+## 8.8.z ##
+
+* Fri Oct 06 2023 Lucas Zampieri <lzampier@redhat.com> [4.18.0-477.31.1.el8_8]
+- mm/userfaultfd: don't consider uffd-wp bit of writable migration entries (Rafael Aquini) [2237947 2231554]
+- mm/userfaultfd: fix uffd-wp handling for THP migration entries (Rafael Aquini) [2237947 2231554]
+- mm/userfaultfd: fix uffd-wp special cases for fork() (Rafael Aquini) [2237947 2231554]
+
+* Thu Aug 31 2023 Lucas Zampieri <lzampier@redhat.com> [4.18.0-477.27.1.el8_8]
+- cifs: fix bogus cifs_mount error handling in RHEL8 (Jeffrey Layton) [2229128 2215018]
+- cifs: missing null pointer check in cifs_mount (Jay Shin) [2229128 2215018]
+
+* Mon Mar 13 2023 Lucas Zampieri <lzampier@redhat.com> [4.18.0-477.3.1.el8]
+- fs/proc: task_mmu.c: don't read mapcount for migration entry (Jay Shin) [2174623]
+
+## 8.6.z ##
+
+* Fri Sep 01 2023 Augusto Caringi <acaringi@redhat.com> [4.18.0-372.72.1.el8_6]
+- cifs: fix bogus cifs_mount error handling in RHEL8 (Jeffrey Layton) [2229129 2215018]
+- cifs: missing null pointer check in cifs_mount (Jay Shin) [2229129 2215018]
+
+* Fri Mar 24 2023 Augusto Caringi <acaringi@redhat.com> [4.18.0-372.51.1.el8_6]
+- fs/proc: task_mmu.c: don't read mapcount for migration entry [rhel-8.6.z] (Jay Shin) [2177139 2174623]
+
+## 8.y ##
+
+* Mon Mar 27 2023 Denys Vlasenko <dvlasenk@redhat.com> [4.18.0-482.el8]
+- fs/proc: task_mmu.c: don't read mapcount for migration entry (Jay Shin) [2174623]
+
+* Thu Sep 23 2021 Augusto Caringi <acaringi@redhat.com> [4.18.0-343.1.el8]
+- x86/cpu: Update cached HLE state on write to TSX_CTRL_CPUID_CLEAR (Jay Shin) [1994421]
+
+* Thu Aug 12 2021 Bruno Meneguele <bmeneg@redhat.com> [4.18.0-331.el8]
+- netfilter: nf_tables: fix flowtable list del corruption (Jay Shin) [1977137]
+
+* Mon Aug 09 2021 Bruno Meneguele <bmeneg@redhat.com> [4.18.0-330.el8]
+- mm, page_alloc: check for max order in hot path (Jay Shin) [1982466]
+
+* Wed May 20 2020 Frantisek Hrbata <fhrbata@redhat.com> [4.18.0-202.el8]
+- [fs] fs: call fsnotify_sb_delete after evict_inodes (Jay Shin) [1834741]
+- [fs] fs: avoid softlockups in s_inodes iterators (Jay Shin) [1834741]
+- [fs] fs/drop_caches.c: avoid softlockups in drop_pagecache_sb() (Jay Shin) [1834741]
+
+## Red Hat Enterprise Linux 7 ##
+
+* Fri Sep 01 2023 Rado Vrbovsky <rvrbovsk@redhat.com> [3.10.0-1160.101.1.el7]
+- cifs: fix a buffer leak in smb2_query_symlink (Jay Shin) [2166706]
+
+* Mon Jul 24 2023 Rado Vrbovsky <rvrbovsk@redhat.com> [3.10.0-1160.97.1.el7]
+* Fri Jul 07 2023 Jan Stancek <jstancek@redhat.com> [3.10.0-1160.96.1.el7]
+
+* Thu Sep 08 2022 Rado Vrbovsky <rvrbovsk@redhat.com> [3.10.0-1160.77.1.el7]
+- net/mlx5: Add Fast teardown support (Jay Shin) [2077711]
+- net/mlx5: Free IRQs in shutdown path (Jay Shin) [2077711]
+- net/mlx5: Change teardown with force mode failure message to warning (Jay Shin) [2077711]
+- net/mlx5: Cancel health poll before sending panic teardown command (Jay Shin) [2077711]
+- net/mlx5: Add fast unload support in shutdown flow (Jay Shin) [2077711]
+- net/mlx5: Expose command polling interface (Jay Shin) [2077711]
+
+* Tue Apr 13 2021 Augusto Caringi <acaringi@redhat.com> [3.10.0-1160.25.1.el7]
+- floppy: check_events callback should not return a negative number (Jay Shin) [1928576]
+- floppy: fix lock_fdc() signal handling (Jay Shin) [1928576]
+
+* Tue Jan 19 2021 Augusto Caringi <acaringi@redhat.com> [3.10.0-1160.16.1.el7]
+- [net] fix struct pid memory leak (Jay Shin) [1901797]
+
+* Thu Jun 04 2020 Jan Stancek <jstancek@redhat.com> [3.10.0-1149.el7]
+- [kernel] pid_ns: Sleep in TASK_INTERRUPTIBLE in zap_pid_ns_processes (Jay Shin) [1836620]
+
+* Tue May 19 2020 Jan Stancek <jstancek@redhat.com> [3.10.0-1143.el7]
+- [fs] fs: avoid softlockups in s_inodes iterators (Jay Shin) [1760145]
+
+* Sat May 16 2020 Jan Stancek <jstancek@redhat.com> [3.10.0-1142.el7]
+- [fs] call fsnotify_sb_delete after evict_inodes (Jay Shin) [1760145]
+- [fs] inode: don't softlockup when evicting inodes (Jay Shin) [1760145]
+- [fs] drop_caches.c: avoid softlockups in drop_pagecache_sb() (Jay Shin) [1760145]
+- [fs] nfs: fix mount/umount race in nlmclnt (Jay Shin) [1771205]
+- [fs] nlm_shutdown_hosts_net() cleanup (Jay Shin) [1771205]
+
+* Thu May 07 2020 Jan Stancek <jstancek@redhat.com> [3.10.0-1140.el7]
+- [fs] nfs: Correct an nfs page array calculation error (Jay Shin) [1824270]
+
+## Red Hat Enterprise Linux 6 ##
+
+* Fri Mar 19 2021 Denys Vlasenko <dvlasenk@redhat.com> [2.6.32-754.38.1.el6]
+- af_unix: fix struct pid memory leak (Jay Shin) [1901744]
