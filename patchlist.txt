@@ -30,12 +30,12 @@
 ## 8.8.z ##
 
 * Fri Oct 06 2023 Lucas Zampieri <lzampier@redhat.com> [4.18.0-477.31.1.el8_8]
-- mm/userfaultfd: don't consider uffd-wp bit of writable migration entries (Rafael Aquini) [2237947 2231554]
-- mm/userfaultfd: fix uffd-wp handling for THP migration entries (Rafael Aquini) [2237947 2231554]
-- mm/userfaultfd: fix uffd-wp special cases for fork() (Rafael Aquini) [2237947 2231554]
+- mm/userfaultfd: don't consider uffd-wp bit of writable migration entries (Jay Shin) [2237947 2231554]
+- mm/userfaultfd: fix uffd-wp handling for THP migration entries (Jay Shin) [2237947 2231554]
+- mm/userfaultfd: fix uffd-wp special cases for fork() (Jay Shin) [2237947 2231554]
 
 * Thu Aug 31 2023 Lucas Zampieri <lzampier@redhat.com> [4.18.0-477.27.1.el8_8]
-- cifs: fix bogus cifs_mount error handling in RHEL8 (Jeffrey Layton) [2229128 2215018]
+- cifs: fix bogus cifs_mount error handling in RHEL8 (Jay Shin) [2229128 2215018]
 - cifs: missing null pointer check in cifs_mount (Jay Shin) [2229128 2215018]
 
 * Mon Mar 13 2023 Lucas Zampieri <lzampier@redhat.com> [4.18.0-477.3.1.el8]
@@ -44,7 +44,7 @@
 ## 8.6.z ##
 
 * Fri Sep 01 2023 Augusto Caringi <acaringi@redhat.com> [4.18.0-372.72.1.el8_6]
-- cifs: fix bogus cifs_mount error handling in RHEL8 (Jeffrey Layton) [2229129 2215018]
+- cifs: fix bogus cifs_mount error handling in RHEL8 (Jay Shin) [2229129 2215018]
 - cifs: missing null pointer check in cifs_mount (Jay Shin) [2229129 2215018]
 
 * Fri Mar 24 2023 Augusto Caringi <acaringi@redhat.com> [4.18.0-372.51.1.el8_6]
