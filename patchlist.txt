@@ -11,6 +11,9 @@
 
 ## 9.2.z ##
 
+* Thu Nov 23 2023 Herton R. Krzesinski <herton@redhat.com> [5.14.0-284.43.1.el9_2]
+- cifs: fix dentry lookups in directory handle cache (Jay Shin) [2249558 2218388]
+
 * Wed Nov 01 2023 Herton R. Krzesinski <herton@redhat.com> [5.14.0-284.40.1.el9_2]
 - keys: Fix linking a duplicate key to a keyring's assoc_array (Jay Shin) [RHEL-14057 RHEL-9908]
 
@@ -51,6 +54,10 @@
 - fs/proc: task_mmu.c: don't read mapcount for migration entry [rhel-8.6.z] (Jay Shin) [2177139 2174623]
 
 ## 8.y ##
+
+* Thu Nov 30 2023 Denys Vlasenko <dvlasenk@redhat.com> [4.18.0-528.el8]
+- net/tls: Remove the context from the list in tls_device_down (Jay Shin) [RHEL-17301]
+- tls: Fix context leak on tls_device_down (Jay Shin) [RHEL-17301]
 
 * Mon Mar 27 2023 Denys Vlasenko <dvlasenk@redhat.com> [4.18.0-482.el8]
 - fs/proc: task_mmu.c: don't read mapcount for migration entry (Jay Shin) [2174623]
