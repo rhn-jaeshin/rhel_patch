@@ -30,7 +30,18 @@
 
 
 ## Red Hat Enterprise Linux 8 ##
+
+## 8.9.z ##
+
+* Thu Dec 14 2023 Patrick Talbert <ptalbert@redhat.com> [4.18.0-513.12.1.el8_9]
+- net/tls: Remove the context from the list in tls_device_down (Jay Shin) [RHEL-17813 RHEL-17301]
+- tls: Fix context leak on tls_device_down (Jay Shin) [RHEL-17813 RHEL-17301]
+
 ## 8.8.z ##
+
+* Thu Dec 14 2023 Lucas Zampieri <lzampier@redhat.com> [4.18.0-477.41.1.el8_8]
+- net/tls: Remove the context from the list in tls_device_down (Jay Shin) [RHEL-17818 RHEL-17301]
+- tls: Fix context leak on tls_device_down (Jay Shin) [RHEL-17818 RHEL-17301]
 
 * Fri Oct 06 2023 Lucas Zampieri <lzampier@redhat.com> [4.18.0-477.31.1.el8_8]
 - mm/userfaultfd: don't consider uffd-wp bit of writable migration entries (Jay Shin) [2237947 2231554]
@@ -45,6 +56,10 @@
 - fs/proc: task_mmu.c: don't read mapcount for migration entry (Jay Shin) [2174623]
 
 ## 8.6.z ##
+
+* Thu Dec 14 2023 Augusto Caringi <acaringi@redhat.com> [4.18.0-372.86.1.el8_6]
+- net/tls: Remove the context from the list in tls_device_down (Jay Shin) [RHEL-17817 RHEL-17301]
+- tls: Fix context leak on tls_device_down (Jay Shin) [RHEL-17817 RHEL-17301]
 
 * Fri Sep 01 2023 Augusto Caringi <acaringi@redhat.com> [4.18.0-372.72.1.el8_6]
 - cifs: fix bogus cifs_mount error handling in RHEL8 (Jay Shin) [2229129 2215018]
