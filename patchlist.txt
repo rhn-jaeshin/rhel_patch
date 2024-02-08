@@ -2,12 +2,24 @@
 
 ## Red Hat Enterprise Linux 9 ##
 
+* Thu Feb 08 2024 Jan Stancek <jstancek@redhat.com> [5.14.0-362.23.1.el9_3]
+- iommu/iova: Manage the depot list size (Jay Shin) [RHEL-21517 RHEL-11148]
+- iommu/iova: Make the rcache depot scale better (Jay Shin) [RHEL-21517 RHEL-11148]
+
 * Thu Jan 25 2024 Jan Stancek <jstancek@redhat.com> [5.14.0-362.21.1.el9_3]
 - NFS: Use parent's objective cred in nfs_access_login_time() (Jay Shin) [RHEL-22147 RHEL-16024]
 
 * Thu Jan 25 2024 Herton R. Krzesinski <herton@redhat.com> [5.14.0-284.51.1.el9_2]
 - NFS: Use parent's objective cred in nfs_access_login_time() (Jay Shin) [RHEL-22146 RHEL-16024]
 - NFS: Fix up a sparse warning (Jay Shin) [RHEL-22146 2183621]
+
+## Red Hat Enterprise Linux 8 ##
+
+* Thu Feb 08 2024 Patrick Talbert <ptalbert@redhat.com> [4.18.0-513.19.1.el8_9]
+- libceph: fix potential use-after-free on linger ping and resends (Jay Shin) [RHEL-21394 RHEL-20390]
+
+* Thu Feb 08 2024 Lucas Zampieri <lzampier@redhat.com> [4.18.0-477.48.1.el8_8]
+- libceph: fix potential use-after-free on linger ping and resends (Jay Shin) [RHEL-21398 RHEL-20390]
 
 ### 2023 H2 ###
 
